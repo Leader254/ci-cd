@@ -8,15 +8,17 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest --no-watch",
+    "coverage": "vitest run --coverage",
     "prepare": "husky",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.{js, jsx,ts,tsx}": [
-        "eslint --fix"
-        ]
-    },
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
+    "@vitest/coverage-v8": "^3.1.4",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
